@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+*{
+    box-sizing: border-box;
+}
+html{
+    font: 18px;
+}
+body{
+    
+    font-family: 'Kumbh Sans', sans-serif;
+    margin: 0;
+    padding:0;
+    background:  url(./images/bg-pattern-top.svg) no-repeat -300px -560px ,url(./images/bg-pattern-bottom.svg) no-repeat 720px 350px;
+    z-index: 1;
+     min-height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Dark-cyan);
+}
+h2{
+    opacity: 0.9;
+    margin:8px 0;
+}
+
+.card{
+    width: 400px;
+    max-width: 100%;
+    background-color: white;
+    border-radius: 10px;
+   
+}
+header img{
+    
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height:100px;
+    border-radius: 10px 10px 0 0;
+     
+}
+section.body-card{
+    text-align: center;
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0.08);
+    line-height: -1;
+    padding-bottom: 15px;
+    margin: 0;
+
+}
+section span {
+    font-weight: 200;
+    opacity: .6;
+    line-height: 0;
+    padding-left: 6px;
+}
+section h3{
+    opacity: .6;
+     font-weight: 200;
+     line-height: 0;
+     font-size: 1rem;
+}
+div.img-holder img{
+    border-radius: 50%;
+  margin: -50px 0 20px 0;
+  border: 5px white solid;
+  width: 120px;
+  height: 100px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 0;
+    text-align: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    padding:.5rem 0;
+}
+footer h5{
+    font-weight: 200;
+    opacity: 0.6;
+     font-size: .8rem;
+     letter-spacing: 2px;
+}
+footer.item{
+    padding: 20px;
+}
+footer h4{
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+@media(max-width:500px){
+    body{
+    padding:0 1rem;
+    background:  url(./images/bg-pattern-top.svg) no-repeat -700px -650px ,url(./images/bg-pattern-bottom.svg) no-repeat 200px 300px;
+    z-index: 1;
+    background-color: var(--Dark-cyan);
+}
+   
+
+}
